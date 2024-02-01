@@ -1,0 +1,267 @@
+.status {
+    text-align: left;
+    margin: 0px;
+    font-family: "Inter Medium", sans-serif;
+  }
+  
+  .maincontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 60%;
+  
+  }
+  
+  .buttonswrapperGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  
+  /* CSS */
+  .button28 {
+    align-items: center;
+    background-color: #da5fff;
+    border: 2px solid #1d0321;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 55px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 75%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+  }
+  
+  .button28:after {
+    background-color: #210c20;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 14px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+  }
+  
+  .button28:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button28:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .button28:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button28 {
+      padding: 0 40px;
+    }
+  }
+  
+  .myinput {
+    background-color: rgb(253, 232, 255);
+    border-radius: 15px;
+    border: 2px solid #1d0321;
+    padding: 20px;
+    width: 44%;
+    height: 15px;
+  }
+  
+  .inputcontainer {
+    display: flex;
+    justify-content: space-between; /* Space the input fields evenly */
+    align-items: center; /* Align the input fields vertically in the container */
+  }
+  
+  .buttoncontainer {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .mintcontainer {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 50px;
+    margin-bottom: 16px;
+  }
+  /* CSS */
+  .button64 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #280b36 50%, #e30eff);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 2em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .button64:active,
+  .button64:hover {
+    outline: 0;
+  }
+  
+  .button64 span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .button64:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button64 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
+  
+  /* CSS */
+  .button49,
+  .button49:after {
+    width: 150px;
+    height: 76px;
+    line-height: 78px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #ff01ee 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button49:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'GET YOUR NFT';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #c401ff 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  .button49:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .button49,
+    .button49:after {
+      width: 200px;
+      height: 86px;
+      line-height: 88px;
+    }
+  }
